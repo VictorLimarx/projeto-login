@@ -9,13 +9,15 @@ Laptop/Desktop: 1025px - 1200px (Laptops, pequenos monitores)
 Telas Grandes: 1201 ou mais (monitores widescreen)
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Config para Tablet */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 80vw;
+        height: 290px;
+
     }
 
     section#login > div#imagem {
@@ -30,13 +32,14 @@ Telas Grandes: 1201 ou mais (monitores widescreen)
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* Config para Desktop */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 950px;
+        height: 350px;
     }
 
     section#login > div#imagem {
@@ -51,10 +54,11 @@ Telas Grandes: 1201 ou mais (monitores widescreen)
     }
 
     div#formulario > h1 {
-    font-size: 2em;
+        font-size: 2em;
     }
 
     div#formulario > p {
-    font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
